@@ -2,14 +2,16 @@ var express = require('express')
 
 var app=express()
 var path =require('path')
+
+app.set('port', (process.env.PORT || 5000));
+
 app.use('/css',express.static(__dirname + '/css'))
 
-app.listen(1326,function(){
+app.get('/', function(request, response) {
+  response.render('index.html');
+});
 
-	console.log('server is listen 1326')
-})
+// app.get('/',function(req,res){
 
-app.get('/',function(req,res){
-
-	res.sendFile('index.html',{root:path.join(__dirname)})
-})
+// 	res.sendFile('index.html',{root:path.join(__dirname)})
+// })
