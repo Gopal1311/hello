@@ -10,5 +10,5 @@ app.listen(process.env.PORT || 3000, function(){
 
 app.get('/',function(req,res){
 //res.render('main');
-	res.sendFile('index.html',{root:path.join(__dirname)})
+	res.sendFile('main.html',{root:path.join(__dirname)})
 })
