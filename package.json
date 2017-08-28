@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "thsi is demo project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "scripts": {
+     "start": "node index.js",
+    "test": "node test.js"
   },
   "engines":{
     "node" :"8.4.0"
@@ -17,7 +18,7 @@
     "demo"
   ],
   "author": "npm.demo.gopalcontractor17@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Gopal1311/demo/issues"
   },
